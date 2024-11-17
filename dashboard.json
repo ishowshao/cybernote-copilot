@@ -1,9 +1,9 @@
 {
-    "model": "llama3.1:latest",
+    "model": "qwen2.5:latest",
     "messages": [
         {
             "role": "system",
-            "content": "List the unfinished to-do items and give action suggestions for today based on the deadline of each item"
+            "content": "列出未完成的待办事项，并根据每项事项的截止日期给出今天的行动建议"
         },
         {
             "role": "system",
@@ -11,19 +11,19 @@
         },
         {
             "role": "user",
-            "content": "TODO: Get the car fixed and washed before next weekend. Deadline: 2024-11-25"
+            "content": "TODO: 下周末之前把车修好并洗好。 Deadline: 2024-11-25"
         },
         {
             "role": "user",
-            "content": "TODO: I need to go to the hospital to buy medicine before next Friday. Deadline: 2024-11-23"
+            "content": "TODO: 我需要在下周五之前去医院买药。 Deadline: 2024-11-23"
         },
         {
             "role": "user",
-            "content": "TODO: Buy a kilogram of apples. Deadline: 2024-11-17"
+            "content": "TODO: 买一公斤苹果。 Deadline: 2024-11-17"
         },
         {
             "role": "user",
-            "content": "TODO: Completed the Introduction to Algorithms course. Deadline: 2025-06-30"
+            "content": "TODO: 完成《算法导论》课程的学习。 Deadline: 2025-06-30"
         }
     ],
     "stream": false
