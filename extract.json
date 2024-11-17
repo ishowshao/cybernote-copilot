@@ -1,17 +1,17 @@
 {
-    "model": "llama3.1:latest",
+    "model": "qwen2.5:latest",
     "messages": [
         {
             "role": "system",
-            "content": "Extract appropriate to-do items based on user input"
+            "content": "根据用户输入提取适当的待办事项"
         },
         {
             "role": "system",
-            "content": "current time: 2024-11-17 19:30:00"
+            "content": "current date: 2024-11-17"
         },
         {
             "role": "user",
-            "content": "Get the car fixed and washed before next weekend"
+            "content": "下周末结束之前，需要修好车并且洗车"
         }
     ],
     "stream": false,

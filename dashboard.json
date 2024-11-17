@@ -1,0 +1,30 @@
+{
+    "model": "llama3.1:latest",
+    "messages": [
+        {
+            "role": "system",
+            "content": "List the unfinished to-do items and give action suggestions for today based on the deadline of each item"
+        },
+        {
+            "role": "system",
+            "content": "current date: 2024-11-17"
+        },
+        {
+            "role": "user",
+            "content": "TODO: Get the car fixed and washed before next weekend. Deadline: 2024-11-25"
+        },
+        {
+            "role": "user",
+            "content": "TODO: I need to go to the hospital to buy medicine before next Friday. Deadline: 2024-11-23"
+        },
+        {
+            "role": "user",
+            "content": "TODO: Buy a kilogram of apples. Deadline: 2024-11-17"
+        },
+        {
+            "role": "user",
+            "content": "TODO: Completed the Introduction to Algorithms course. Deadline: 2025-06-30"
+        }
+    ],
+    "stream": false
+}
