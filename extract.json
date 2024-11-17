@@ -1,0 +1,48 @@
+{
+    "model": "llama3.1:latest",
+    "messages": [
+        {
+            "role": "system",
+            "content": "Extract appropriate to-do items based on user input"
+        },
+        {
+            "role": "system",
+            "content": "current time: 2024-11-17 19:30:00"
+        },
+        {
+            "role": "user",
+            "content": "Get the car fixed and washed before next weekend"
+        }
+    ],
+    "stream": false,
+    "tools": [
+        {
+            "type": "function",
+            "function": {
+                "name": "addTodoItem",
+                "description": "add a todo item",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "title": {
+                            "type": "string",
+                            "description": "The main task description"
+                        },
+                        "description": {
+                            "type": "string",
+                            "description": "Additional details about the task (optional)"
+                        },
+                        "dueDate": {
+                            "type": "string",
+                            "description": "Optional due date to set a deadline. datetime string like 2024-01-01 12:00:00"
+                        }
+                    },
+                    "required": [
+                        "title",
+                        "dueDate"
+                    ]
+                }
+            }
+        }
+    ]
+}
